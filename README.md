@@ -489,37 +489,6 @@ npm run start -- url --help
 - `npm test` - Run unit tests
 - `npm run test:watch` - Run tests and watch for file changes
 
-### Project Structure
-
-```
-supabase-storage-cli/
-├── src/
-│   ├── commands/
-│   │   ├── bucket.ts      # Bucket management commands
-│   │   ├── file.ts        # File operation commands
-│   │   ├── url.ts         # URL generation commands
-│   │   └── index.ts       # Command exports
-│   ├── utils.ts           # Shared utility functions
-│   └── logger.ts          # Logging utilities
-├── bin/
-│   └── run                # CLI entry point
-├── dist/                  # Compiled output
-└── package.json
-```
-
-### Adding New Commands
-
-1. Create a new file in `src/commands/` (e.g., `mycommand.ts`)
-2. Implement the yargs command pattern:
-   ```typescript
-   export const command = 'mycommand <arg>'
-   export const describe = 'Description of my command'
-   export function builder(yargs: Argv): Argv { ... }
-   export async function handler(argv: any) { ... }
-   ```
-3. Export it from `src/commands/index.ts`
-4. Build and test
-
 ## CI/CD and Automation
 
 ### Automated Version Management and NPM Publishing with Semantic-Release

@@ -1,4 +1,4 @@
-import yargs, { CommandModule } from 'yargs'
+import yargs from 'yargs'
 import { config } from 'dotenv'
 import { commands } from '../src'
 import { bgBlue, bold, red } from 'picocolors'
@@ -13,8 +13,7 @@ run.usage(
   ),
 )
 for (const command of commands) {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  run.command(command as CommandModule<any, any>)
+  run.command(command)
 }
 
 run.demandCommand(1, 'You need at least one command before moving on').help().argv

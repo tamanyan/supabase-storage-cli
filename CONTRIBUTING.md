@@ -23,6 +23,7 @@ Thank you for your interest in contributing to Supabase Storage CLI! This docume
    npm install
    ```
 4. Set up environment variables:
+
    ```bash
    # Create a .env file
    cp .env.example .env
@@ -166,6 +167,7 @@ npm run test:watch
 ## Pull Request Process
 
 1. **Create a feature branch** from `main`:
+
    ```bash
    git checkout -b feat/my-new-feature
    ```
@@ -175,6 +177,7 @@ npm run test:watch
 3. **Write or update tests** for your changes
 
 4. **Run all checks**:
+
    ```bash
    npm run lint
    npm run format
@@ -182,11 +185,13 @@ npm run test:watch
    ```
 
 5. **Commit your changes** using conventional commits:
+
    ```bash
    npm run commit
    ```
 
 6. **Push to your fork**:
+
    ```bash
    git push origin feat/my-new-feature
    ```
