@@ -557,18 +557,6 @@ efficiently and that users are well-informed of each update through automaticall
 4. **Environment Variables:** Use `.env` file for local development
 5. **Git Hooks:** Pre-commit hooks automatically run linting and formatting
 
-## Contributing
-
-Contributions are welcome! Please follow the standard fork-and-pull request workflow:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes following the coding standards
-4. Write tests for new features
-5. Run `npm run lint` and `npm run format` before committing
-6. Use `npm run commit` for conventional commit messages
-7. Submit a pull request
-
 ## Technology Stack
 
 - **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript
@@ -581,8 +569,3 @@ Contributions are welcome! Please follow the standard fork-and-pull request work
 ## License
 
 MIT
-
-## Related Projects
-
-- [Supabase Storage](https://github.com/supabase/storage)
-- [Supabase Storage JS](https://github.com/supabase/storage-js)
